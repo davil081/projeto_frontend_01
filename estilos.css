@@ -71,7 +71,7 @@ body{
 }
 #mensagem h1{
     font-size: 60px;
-    line-height: 55px;
+    line-hi6ght: 55px;
 }
 #mensagem p{
     font-size: 30px;
@@ -83,10 +83,11 @@ body{
     background-image: url('imagens/nuvem.png');
 }
 
-#secao_01{
+#secao_01, #secao_02{
     display: flex;
     width: 80%;
     margin: auto;
+    margin-top: 80px;
 }
 #criancas_secao_01{
     background-image: url('imagens/criancas2.jpg');
@@ -102,4 +103,18 @@ body{
 }
 #conteudo_secao_01 h1{
     font-size: 40px;
+}
+
+
+#criancas_secao_02{
+    background-image: url('imagens/criancas3.jpg');
+    background-size: cover;
+    width: 60%;
+    height: 350px;
+    border-radius: 70px 0px 0px 70px;
+}
+#conteudo_secao_02{
+    background-color: var(--verde_limão);
+    width: 40%;
+    border-radius: 0px 70px 70px 0px;
 }
