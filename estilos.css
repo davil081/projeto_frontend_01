@@ -184,18 +184,135 @@ body{
     font-size: 30px;
     color: var(--branco);
 }
+#menu_lateral{
+    background-color: var(--azul_claro);
+    width: 250px;
+    margin-left: -400px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 0px 20px black;
+    transition: all 0.7s;
+}
+.aparecer{
+    margin-left: 0px !important;
+}
+#menu_lateral h1{
+    font-family: Arial;
+    color: var(--branco);
+    width: 25px;
+    margin-left: 200px;
+}
+#menu_lateral h1:hover{
+    cursor: pointer;
+}
+#menu_lateral .item_menu{
+    width: 100px;
+    justify-content: center;
+    margin-left: 40px;
+    color: var(--branco);
+    margin-bottom: 10px;
+}
+
 
 /*Configuração para Smartphones*/
 @media screen and(max-width: 480px){
+    #secao_01{
+        flex-direction: column; /*Deixar os elementos um abaixo do outro*/
+    }
+    #secao_02{
+        flex-direction: column;
+    }
+    #criancas_secao_01{
+        margin: auto; /*Margem automática para centralizar*/
+    }
+    #conteudo_secao_01{
+        width: 450px;
+    }
+    #conteudo_secao_01 h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
     #menu_mobile_tablet{
         display: flex;
     }
     #menu_topo{
         display: none;
     }
+
+    #mensagem h1{
+        font-size: 25px;
+        line-height: 23px;
+    }
+    #mensagem p{
+        font-size: 15px;
+        line-height: 13px;
+    }
+    #mensagem{
+        padding: 5px;
+        width: 80%;
+        height: 130px;
+    }
 }
 
 /*Configuração para Tablets*/
 @media screen and(min-width: 481px) and(max-width: 1024px){
-   
+    #menu_mobile_tablet{
+        display: flex;
+    }
+    #menu_topo{
+        display: none;
+    }
+    #mensagem{
+        padding: 20px;
+        width: 60%;
+        height: 250px;
+    }
+    #mensagem h1{
+        font-size: 40px;
+    }
+    #mensagem p{
+        font-size: 25px;
+    }
+
+
+    #rodape{
+        flex-direction: column;
+    }
+    #coluna1, #coluna2, #coluna3{
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 50px ;
+    }
+    #coluna2 i{
+        margin-left: 0px;
+    }
+    #coluna3 img{
+        display: none;
+    }
+
+    
+    #secao_02{
+        flex-direction: column;
+    }
+    #criancas_secao_02{
+        width: 450px;
+        height: 250px;
+        border-radius: 40px 40px 0px 0px;
+    }
+    #criancas_secao_02{
+        width: 450px;
+        border-radius: 0px 0px 40px 40px;
+        padding-bottom: 50px;
+    }
+
+
+    #secao_01{
+        flex-direction: column; /*Deixar os elementos um abaixo do outro*/
+    }
+    #criancas_secao_01{
+        margin: auto; /*Margem automática para centralizar*/
+    }
+    #conteudo_secao_01{
+        width: 450px;
+    }
 }
