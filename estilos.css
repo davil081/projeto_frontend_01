@@ -24,7 +24,7 @@
 }
 body{
     margin: 0px;
-    font-family: Marhey;
+    font-family: 'Marhey';
     background-image: url('imagens/nuvem.png');
 }
 
@@ -38,8 +38,8 @@ body{
     margin-right: 30px;
     display: flex;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 40px 0px 40px 40px;
     height: 90px;
 }
@@ -54,7 +54,7 @@ body{
 
 #banner{
     width: 100%;
-    height: 40VW;
+    height: 40vw;
     background-image: url('imagens/criancas.jpg');
     background-size: cover;
     display: flex;
@@ -82,12 +82,11 @@ body{
 
 #container{
     text-align: center;
-    background-image: url('imagens/nuvem.png');
 }
 
 #secao_01, #secao_02{
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-top: 80px;
 }
@@ -96,7 +95,7 @@ body{
     width: 450px;
     height: 350px;
     background-size: cover;
-    border-radius: 70px 10px 70px 10px;
+    border-radius: 50px 10px 50px 10px;
 }
 #conteudo_secao_01{
     width: 600px;
@@ -113,12 +112,12 @@ body{
     background-size: cover;
     width: 60%;
     height: 350px;
-    border-radius: 70px 0px 0px 70px;
+    border-radius: 40px 0px 0px 40px;
 }
 #conteudo_secao_02{
     background-color: var(--verde_limão);
     width: 40%;
-    border-radius: 0px 70px 70px 0px;
+    border-radius: 0px 40px 40px 0px;
     color: var(--branco);
     text-align: left;
 }
@@ -174,8 +173,8 @@ body{
     color: var(--amarelo_canário);
     text-decoration: none;
 }
-#menu_mobile-tablet{
-    background-color: red;
+#menu_mobile_tablet{
+    background-color: var(--azul_claro);
     height: 70px;
     display: none;
     align-items: center;
@@ -215,23 +214,60 @@ body{
 
 
 /*Configuração para Smartphones*/
-@media screen and(max-width: 480px){
-    #secao_01{
-        flex-direction: column; /*Deixar os elementos um abaixo do outro*/
+@media screen and (max-width: 480px){
+    #rodape{
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
     }
+    #coluna1, #coluna2, #coluna3{
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 8px;
+    }
+    #coluna2 i{
+        margin-left: 0px;
+    }
+    #coluna3 img{
+        display: none;
+    }
+
+
     #secao_02{
         flex-direction: column;
     }
+    #criancas_secao_02{
+        width: 300px;
+        height: 150px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    #conteudo_secao_02{
+        width: 300px;
+        border-radius: 0px 0px 20px 20px;
+        padding-bottom: 30px;
+    }
+
+
+    #secao_01{
+        flex-direction: column; /* Deixar os elementos uma abaixo do outro*/
+    }
     #criancas_secao_01{
         margin: auto; /*Margem automática para centralizar*/
+        width: 300px;
+        height: 200px;
     }
     #conteudo_secao_01{
-        width: 450px;
+        width: 300px;
+        padding-left: 0px;
     }
     #conteudo_secao_01 h1{
         font-size: 30px;
-        line-height: 30px;
+        line-height:30px;
     }
+
+
+
+
     #menu_mobile_tablet{
         display: flex;
     }
@@ -239,8 +275,10 @@ body{
         display: none;
     }
 
+
+
     #mensagem h1{
-        font-size: 25px;
+        font-size: 15px;
         line-height: 23px;
     }
     #mensagem p{
@@ -252,10 +290,11 @@ body{
         width: 80%;
         height: 130px;
     }
+    
 }
 
 /*Configuração para Tablets*/
-@media screen and(min-width: 481px) and(max-width: 1024px){
+@media screen and (min-width: 481px) and (max-width: 1024px){
     #menu_mobile_tablet{
         display: flex;
     }
@@ -263,9 +302,9 @@ body{
         display: none;
     }
     #mensagem{
-        padding: 20px;
+        padding: 10px;
         width: 60%;
-        height: 250px;
+        height: 240px;
     }
     #mensagem h1{
         font-size: 40px;
@@ -293,13 +332,14 @@ body{
     
     #secao_02{
         flex-direction: column;
+        width: 450px;
     }
     #criancas_secao_02{
         width: 450px;
         height: 250px;
         border-radius: 40px 40px 0px 0px;
     }
-    #criancas_secao_02{
+    #conteudo_secao_02{
         width: 450px;
         border-radius: 0px 0px 40px 40px;
         padding-bottom: 50px;
